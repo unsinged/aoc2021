@@ -4,7 +4,7 @@ def main():
 
     # Read data
     data = [int(input())]
-    while data:
+    while True:
         try:
             data.append(int(input()))
         except Exception:
