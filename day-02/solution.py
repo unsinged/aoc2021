@@ -6,6 +6,7 @@ def main():
     data = []
     while True:
         try:
+            # First column is for depth/aim, second column is for horizontal
             command, num = input().split()
             if command == "forward":
                 data.append((0, int(num)))
