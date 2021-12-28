@@ -15,7 +15,7 @@ def main():
             board = []
             # Boards are 5x5
             for _ in range(5):
-                board.append([int(x) for x in input().split()])
+                board.append(list(map(int, input().split())))
             boards.append(np.array(board))
         except Exception:
             break

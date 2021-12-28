@@ -25,7 +25,7 @@ def main():
     data = []
     while True:
         try:
-            data.append([int(x) for x in input()])
+            data.append(list(map(int, input())))
         except Exception:
             break
     data = np.array(data)
